@@ -37,7 +37,7 @@ function Admin() {
 
   const loadSchedulerStatus = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/v1/learning/status');
+      const response = await fetch('https://math-ai-agent.onrender.com/api/v1/learning/status');
       const data = await response.json();
       setSchedulerStatus(data);
       setError(null);
@@ -49,7 +49,7 @@ function Admin() {
 
   const loadLearningHistory = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/v1/learning/history?limit=10');
+      const response = await fetch('https://math-ai-agent.onrender.com/api/v1/learning/history?limit=10');
       const data = await response.json();
       setLearningHistory(data.cycles || []);
     } catch (err) {
@@ -59,7 +59,7 @@ function Admin() {
 
   const loadMetrics = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/v1/learning/metrics');
+      const response = await fetch('https://math-ai-agent.onrender.com/api/v1/learning/metrics');
       const data = await response.json();
       setMetrics(data.metrics);
     } catch (err) {
@@ -74,7 +74,7 @@ function Admin() {
 
     setTriggeringCycle(true);
     try {
-      const response = await fetch('http://localhost:8000/api/v1/learning/cycle', {
+      const response = await fetch('https://math-ai-agent.onrender.com/api/v1/learning/cycle', {
         method: 'POST'
       });
       const data = await response.json();
@@ -358,3 +358,4 @@ function Admin() {
 }
 
 export default Admin;
+
