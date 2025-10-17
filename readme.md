@@ -1,12 +1,5 @@
 # Codebase Complete Source Code Documentation
 
-This documentation reflects only what currently exists in the repository. It provides a clear overview of the architecture, key components, their roles, and how they interact.
-
-- For visual diagrams (HLD/LLD), see: `ARCHITECTURE_DIAGRAMS.md`
-- Project root: `d:\AI-agent`
-
----
-
 ## 1) System Overview
 
 An agentic RAG system for mathematical question answering with human-in-the-loop learning.
@@ -357,4 +350,5 @@ Migration notes:
 - Install backend deps, create `.env`, start FastAPI.
 - Install frontend deps, set `REACT_APP_API_URL`, start dev server.
 - Open Home, ask a math question, submit feedback, then visit Admin to trigger/inspect learning cycles.
+
 
