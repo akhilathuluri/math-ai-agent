@@ -1,0 +1,51 @@
+# FastAPI and server
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+pydantic
+pydantic-settings
+
+# LangChain and LangGraph
+langchain
+langchain-openai
+langchain-community
+langgraph
+langsmith
+
+# Vector Database - Supabase
+supabase
+vecs
+pgvector
+
+# Embeddings and LLM
+openai
+tiktoken
+
+# Web Search
+tavily-python
+
+# DSPy for optimization
+dspy-ai
+
+# Scheduling for periodic tasks
+apscheduler
+
+# Guardrails
+nemoguardrails
+
+# MCP (Model Context Protocol)
+mcp
+
+# Data Processing
+numpy
+pandas
+scikit-learn
+
+# HTTP requests
+httpx
+aiohttp
+
+# Utils
+pyyaml
+tqdm
